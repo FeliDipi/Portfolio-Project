@@ -23,6 +23,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+
+    line-height: 25px;
 }
 
 /** Nav Bar **/
@@ -37,6 +39,8 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    z-index: 100;
 }
 
 .DarkMode
@@ -154,7 +158,7 @@ nav
 .Text-p
 {
     line-height: 25px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 15px;
 }
 
@@ -171,6 +175,8 @@ nav
 {
     width: 300px;
     height: 300px;
+
+    box-shadow: var(--shadow-0);
 }
 
 #Profile-h1
@@ -185,15 +191,306 @@ nav
     line-height: 35px;
 }
 
+/** Works Section **/
+
+#Works-Panel
+{
+    position: relative;
+
+    width: 850px;
+    height: 550px;
+    background-color: var(--color-3);
+
+    box-shadow: var(--shadow-0);
+
+    padding: 50px;
+    padding-bottom: 80px;
+}
+
+.Work-Index
+{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap:25px;
+
+    left: 50px;
+    bottom: 18px;
+}
+
+.Work-Index-Item
+{
+    cursor: pointer;
+
+    list-style: none;
+    width: 10px;
+    height: 10px;
+
+    background-color: var(--color-1);
+}
+
+.Actual-Index
+{
+    width: 25px;
+    height: 25px;
+
+    border-radius: 100%;
+
+    background-color: var(--color-2);
+}
+
+#Works-Item-Content
+{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Work-Item
+{
+    cursor: pointer;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 200px;
+
+    background-color: var(--color-0);
+}
+
+.Work-Item-Preview
+{
+    height: 60%;
+    overflow: hidden;
+}
+
+.Work-Item-Preview img
+{
+    width: 100%;
+    height: auto;
+}
+
+.Work-Item-Description
+{
+    height: 40%;
+    width: 100%;
+    padding: 20px;
+}
+
+.Work-Item-Name
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.Work-Item-SubInfo
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Work-Item-Data
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+
+    color:var(--color-8);
+}
+
+.Work-Item-Software-ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap:3px;
+}
+
+.Work-Item-Software-li
+{
+    list-style: none;
+}
+
+.Work-Item-Software-li img
+{
+    width: 20px;
+    height: 20px;
+}
+
+#Linkeding-Button
+{
+    cursor: pointer;
+
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-2);
+    border-radius: 100%;
+
+    bottom: calc(0% - 25px);
+    left: calc(50% - 25px);
+}
+
+#Linkeding-Button svg
+{
+    width: 25px;
+    height: auto;
+
+    pointer-events: none;
+}
+
+.Work-Extend
+{
+    position: fixed;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(4px);
+
+    z-index: 99;
+}
+
+.Work-Extend-Panel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1000px;
+    height: 550px;
+    
+    background-color: var(--color-0);
+    box-shadow: var(--shadow-0);
+}
+
+.Work-Extend-Gallery
+{
+    position: relative;
+
+    height: 100%;
+    width: 60%;
+}
+
+.Work-Index-Extend
+{
+    bottom: 20px;
+    left: 30px;
+}
+
+.Work-Extend-Gallery-Image
+{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.Work-Extend-Description
+{
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    padding: 25px 25px;
+
+    width: 40%;
+    height: 100%;
+}
+
+.Work-Extend-Title
+{
+    font-size: 30px;
+    font-weight: 800;
+
+    line-height: 30px;
+}
+
+.Work-Extend-Information
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    white-space: pre-line;
+}
+
+.Work-Extend-Close
+{
+    cursor: pointer;
+
+    position: absolute;
+
+    top: calc(0% - 25px);
+    right: calc(0% - 25px);
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+
+    background-color: var(--color-2);
+}
+
+.Work-Extend-Close svg
+{
+    width: 25px;
+    height: auto;
+
+    pointer-events: none;
+}
+
 /** General **/
 
 .Visible
 {
-    display: block;
+    display: flex;
 }
 
 .Text-Colored
 {
     color:var(--color-2);
-    font-weight: 900;
+    font-weight: 700;
+}
+
+.Text-Bold
+{
+    font-weight: 700;
 }
