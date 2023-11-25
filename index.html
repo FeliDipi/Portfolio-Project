@@ -8,15 +8,18 @@
 </head>
 <body>
     <nav class="Navbar">
+        <svg class="DarkMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6A9.996 9.996 0 0 1 12.001 22C6.477 22 2 17.523 2 12c0-5.315 4.146-9.66 9.38-9.98Z"/></svg>
         <ul class="Navbar-ul">
-            <li class="Navbar-li"><a class="Navbar-li-a" href="#Home">home</a></li>
-            <li class="Navbar-li"><a class="Navbar-li-a" href="#Works">Works</a></li>
-            <li class="Navbar-li"><a class="Navbar-li-a" href="#Contact">Contact</a></li>
+            <li class="Navbar-li"><a class="Navbar-li-a Selected" href="#Home">Me</a><div class="Dot Visible"></div></li>
+            <li class="Navbar-li"><a class="Navbar-li-a" href="#Works">Works</a><div class="Dot"></div></li>
+            <li class="Navbar-li"><a class="Navbar-li-a" href="#Contact">Contact</a><div class="Dot"></div></li>
         </ul>
     </nav>
     <section class="Section" id="Home">
         <div id="Personal">
-            <div id="Personal-Dot"></div>
+            <div id="Personal-Dot" >
+                <img src="src/Images/personal_icon_light.png" alt="">
+            </div>
             <h1 class="Text-h1">Personal</h2>
             <p class="Text-p">Lorem ipsum dolor sit amet consectetur <span class="Text-Colored">adipisicing</span> elit. Quos numquam fugiat eius magnam ex similique distinctio, quibusdam quas accusantium quisquam mollitia veritatis deleniti ea error impedit. Similique sit veritatis pariatur?</p>
         </div>
@@ -25,7 +28,9 @@
             <h1 id="Profile-h1">Nicolás Felipe <span class="Text-Colored">Dipierro</span></h1>
         </div>
         <div id="Profesional">
-            <div id="Profesional-Dot"></div>
+            <div id="Profesional-Dot">
+                <img src="src/Images/profesional_icon_light.png" alt="">
+            </div>
             <h1 class="Text-h1">Profesional</h2>
             <p class="Text-p">Lorem ipsum dolor sit amet consectetur <span class="Text-Colored">adipisicing</span> elit. Quos numquam fugiat eius magnam ex similique distinctio, quibusdam quas accusantium quisquam mollitia veritatis deleniti ea error impedit. Similique sit veritatis pariatur?</p>
         </div>
@@ -34,7 +39,7 @@
         <div id="Works-Panel">
             <div class="Work-Item">
                 <div class="Work-Item-Preview">
-                    <img src="src/Images/work_placeholder.jpg" alt="">
+                    <!-- <img src="src/Images/work_placeholder.jpg" alt=""> -->
                 </div>
                 <div class="Work-Item-Description">
                     <p class="Work-Item-Name">Example Work</p>
