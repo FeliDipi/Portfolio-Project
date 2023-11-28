@@ -119,6 +119,41 @@ html
     display: flex;
 }
 
+/** Mobile **/
+
+.Mobile-Section
+{
+    flex-direction: column;
+}
+
+.Mobile-Section-Name
+{
+    display: none;
+    
+    text-transform: uppercase;
+    
+    font-size: var(--font-xl);
+    font-weight: 700;
+    
+    color: var(--color-1);
+}
+
+.Mobile-Section-Name + .Dot
+{
+    display: none;
+}
+
+.Mobile-Menu
+{
+    display: none;
+
+    width: auto;
+    height: 50%;
+    margin-right: var(--font-xl);
+
+    cursor: pointer;
+}
+
 /** Sections **/
 
 .Section
@@ -617,9 +652,29 @@ body
 {
     /** Navbar **/
 
+    .Navbar
+    {
+        background-color: var(--color-0);
+    }
+
     .Navbar-ul
     {
         display: none;
+    }
+
+    .Mobile-Section-Name
+    {
+        display: block;
+    }
+
+    .Mobile-Section-Name + .Dot
+    {
+        display: flex;
+    }
+
+    .Mobile-Menu
+    {
+        display: block;
     }
 
     /** Home Section **/

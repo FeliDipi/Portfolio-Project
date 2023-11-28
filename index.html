@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My Styles -->
     <link rel="stylesheet" href="style.css">
     <title>Nicolás Felipe Dipierro</title>
 </head>
 <body>
+    <!-- Nav Bar -->
     <nav class="Navbar Center-Between">
         <svg class="DarkMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6A9.996 9.996 0 0 1 12.001 22C6.477 22 2 17.523 2 12c0-5.315 4.146-9.66 9.38-9.98Z"/></svg>
+        <div class="Mobile-Section Center">
+            <p class="Mobile-Section-Name">Me</p>
+            <div class="Dot"></div>
+        </div>
+        <svg class="Mobile-Menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M0 1h16v3H0zm0 5h16v3H0zm0 5h16v3H0z"/></svg>
         <ul class="Navbar-ul Center">
             <li class="Navbar-li Center"><a class="Navbar-li-a Selected" href="#Home">Me</a><div class="Dot"></div></li>
             <li class="Navbar-li Center"><a class="Navbar-li-a" href="#Works">Works</a><div class="Dot"></div></li>
             <li class="Navbar-li Center"><a class="Navbar-li-a" href="#Contact">Contact</a><div class="Dot"></div></li>
         </ul>
     </nav>
+    <!-- Work Item Extended -->
     <div class="Work-Extend">
         <div class="Work-Extend-Panel Center">
             <div class="Work-Extend-Gallery">
@@ -46,9 +54,9 @@
                     Programming Language: <span class="Text-Bold">Javasript.</span>
                     Softwares: <span class="Text-Bold">VS Code, Figma.</span>
                 </p>
-                <div class="Work-Item-SubInfo">
+                <div class="Work-Item-SubInfo Center-Between">
                     <p class="Work-Item-Data">8 months ago</p>
-                    <ul class="Work-Item-Software-ul">
+                    <ul class="Work-Item-Software-ul Center">
                         <li class="Work-Item-Software-li"><img src="src/Images/js_icon.png" alt=""></li>
                         <li class="Work-Item-Software-li"><img src="src/Images/html_icon.png" alt=""></li>
                         <li class="Work-Item-Software-li"><img src="src/Images/css_icon.png" alt=""></li>
@@ -57,6 +65,7 @@
             </div>
         </div>
     </div>
+    <!-- Home Section -->
     <section class="Section Center" id="Home">
         <div class="Home-Content Center">
             <div id="Personal">
@@ -79,6 +88,7 @@
             </div>
         </div>
     </section>
+    <!-- Work Section -->
     <section class="Section Center" id="Works">
         <div id="Works-Panel">
             <div id="Works-Item-Content">
@@ -167,6 +177,7 @@
             </a>
         </div>
     </section>
+    <!-- Contact Section -->
     <section class="Section Center" id="Contact">
         <form class="Center" id="Form" action="">
             <div class="Form-Input-Content" id="Form-Name-Input">
@@ -190,6 +201,7 @@
             </div>
         </form>
     </section>
+    <!-- Scripts -->
     <script src="main.js" type="module"></script>
 </body>
 </html>
