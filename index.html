@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- My Styles -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Nicolás Felipe Dipierro</title>
 </head>
@@ -22,49 +23,6 @@
             <li class="Navbar-li Center"><a class="Navbar-li-a" href="#Contact">Contact</a><div class="Dot"></div></li>
         </ul>
     </nav>
-    <!-- Work Item Extended -->
-    <div class="Work-Extend">
-        <div class="Work-Extend-Panel Center">
-            <div class="Work-Extend-Gallery">
-                <div class="Work-Extend-Gallery-Image">
-                    <img src="src/Images/work_placeholder.jpg" alt="">
-                </div>
-                <ul class="Work-Index-Extend Work-Index Center">
-                    <li class="Work-Index-Item Actual-Index"></li>
-                    <li class="Work-Index-Item"></li>
-                    <li class="Work-Index-Item"></li>
-                    <li class="Work-Index-Item"></li>
-                </ul>
-                <div class="Work-Extend-Close Center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M3.17646 23.0294L0.970581 20.8235L9.79411 12L0.970581 3.17646L3.17646 0.970581L12 9.79411L20.8235 0.970581L23.0294 3.17646L14.2059 12L23.0294 20.8235L20.8235 23.0294L12 14.2059L3.17646 23.0294Z" fill="black"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="Work-Extend-Description">
-                <h1 class="Work-Extend-Title">One Frame Indie Studio</h1>
-                <p class="Work-Extend-Information">
-                    Lorem ipsum dolor sit amet, consectetur <span class="Text-Colored">adipiscing</span> elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, <span class="Text-Colored">porttitor</span> vitae est. Donec laoreet rutrum libero sed pharetra.
-                    
-                    Duration: <span class="Text-Bold">8 months.</span>
-                    Companny: <span class="Text-Bold">Me.</span>
-                    Language: <span class="Text-Bold">Spanish.</span>
-                    Programming Language: <span class="Text-Bold">Javasript.</span>
-                    Softwares: <span class="Text-Bold">VS Code, Figma.</span>
-                </p>
-                <div class="Work-Item-SubInfo Center-Between">
-                    <p class="Work-Item-Data">8 months ago</p>
-                    <ul class="Work-Item-Software-ul Center">
-                        <li class="Work-Item-Software-li"><img src="src/Images/js_icon.png" alt=""></li>
-                        <li class="Work-Item-Software-li"><img src="src/Images/html_icon.png" alt=""></li>
-                        <li class="Work-Item-Software-li"><img src="src/Images/css_icon.png" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Home Section -->
     <section class="Section Center" id="Home">
         <div class="Home-Content Center">
@@ -90,80 +48,67 @@
     </section>
     <!-- Work Section -->
     <section class="Section Center" id="Works">
-        <div id="Works-Panel">
-            <div id="Works-Item-Content">
-                <div class="Work-Item">
-                    <div class="Work-Item-Preview">
-                        <img src="src/Images/work_placeholder.jpg" alt="">
-                    </div>
-                    <div class="Work-Item-Description">
-                        <p class="Work-Item-Name">Example Work</p>
-                        <div class="Work-Item-SubInfo Center-Between">
-                            <p class="Work-Item-Data">8 months ago</p>
-                            <ul class="Work-Item-Software-ul Center">
-                                <li class="Work-Item-Software-li"><img src="src/Images/js_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/html_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/css_icon.png" alt=""></li>
-                            </ul>
+        <div class="Works-Slide-Content Center">
+            <div class="swiper Works-Slide-Gallery Center">
+                <div class="swiper-wrapper Work-Slide-Wrapper">
+                    <!-- Work Item Start -->
+                    <div class="swiper-slide Work-Slide">
+                        <img class="Work-Slide-Image" src="src/Images/work_placeholder.jpg" alt="">
+                        <div class="Work-Slide-Description">
+                            <p class="Work-Slide-Name">Example Work</p>
+                            <p class="Work-Slide-Info">Lorem ipsum dolor sit amet consectetur <span class="Text-Colored">adipisicing</span> elit. Quos numquam fugiat eius magnam ex similique distinctio, quibusdam quas accusantium quisquam mollitia veritatis deleniti ea error impedit. Similique sit veritatis pariatur?</p>
+                            <div class="Work-Slide-SubInfo Center-Between">
+                                <ul class="Work-Slide-SubInfo-Ul Center">
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/js_icon.png" alt=""></li>
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/html_icon.png" alt=""></li>
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/css_icon.png" alt=""></li>
+                                </ul>
+                                <p class="Work-Slide-Data">8 months ago</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="Work-Item">
-                    <div class="Work-Item-Preview">
-                        <img src="src/Images/work_placeholder.jpg" alt="">
-                    </div>
-                    <div class="Work-Item-Description">
-                        <p class="Work-Item-Name">Example Work</p>
-                        <div class="Work-Item-SubInfo Center-Between">
-                            <p class="Work-Item-Data">8 months ago</p>
-                            <ul class="Work-Item-Software-ul Center">
-                                <li class="Work-Item-Software-li"><img src="src/Images/js_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/html_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/css_icon.png" alt=""></li>
-                            </ul>
+                    <!-- Work Item End -->     
+                    <!-- Work Item Start -->
+                    <div class="swiper-slide Work-Slide">
+                        <img class="Work-Slide-Image" src="src/Images/work_placeholder.jpg" alt="">
+                        <div class="Work-Slide-Description">
+                            <p class="Work-Slide-Name">Example Work</p>
+                            <p class="Work-Slide-Info">Lorem ipsum dolor sit amet consectetur <span class="Text-Colored">adipisicing</span> elit. Quos numquam fugiat eius magnam ex similique distinctio, quibusdam quas accusantium quisquam mollitia veritatis deleniti ea error impedit. Similique sit veritatis pariatur?</p>
+                            <div class="Work-Slide-SubInfo Center-Between">
+                                <ul class="Work-Slide-SubInfo-Ul Center">
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/js_icon.png" alt=""></li>
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/html_icon.png" alt=""></li>
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/css_icon.png" alt=""></li>
+                                </ul>
+                                <p class="Work-Slide-Data">8 months ago</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="Work-Item">
-                    <div class="Work-Item-Preview">
-                        <img src="src/Images/work_placeholder.jpg" alt="">
-                    </div>
-                    <div class="Work-Item-Description">
-                        <p class="Work-Item-Name">Example Work</p>
-                        <div class="Work-Item-SubInfo Center-Between">
-                            <p class="Work-Item-Data">8 months ago</p>
-                            <ul class="Work-Item-Software-ul Center">
-                                <li class="Work-Item-Software-li"><img src="src/Images/js_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/html_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/css_icon.png" alt=""></li>
-                            </ul>
+                    <!-- Work Item End -->    
+                    <!-- Work Item Start -->
+                    <div class="swiper-slide Work-Slide">
+                        <img class="Work-Slide-Image" src="src/Images/work_placeholder.jpg" alt="">
+                        <div class="Work-Slide-Description">
+                            <p class="Work-Slide-Name">Example Work</p>
+                            <p class="Work-Slide-Info">Lorem ipsum dolor sit amet consectetur <span class="Text-Colored">adipisicing</span> elit. Quos numquam fugiat eius magnam ex similique distinctio, quibusdam quas accusantium quisquam mollitia veritatis deleniti ea error impedit. Similique sit veritatis pariatur?</p>
+                            <div class="Work-Slide-SubInfo Center-Between">
+                                <ul class="Work-Slide-SubInfo-Ul Center">
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/js_icon.png" alt=""></li>
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/html_icon.png" alt=""></li>
+                                    <li class="Work-Slide-SubInfo-li"><img src="src/Images/css_icon.png" alt=""></li>
+                                </ul>
+                                <p class="Work-Slide-Data">8 months ago</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="Work-Item">
-                    <div class="Work-Item-Preview">
-                        <img src="src/Images/work_placeholder.jpg" alt="">
-                    </div>
-                    <div class="Work-Item-Description">
-                        <p class="Work-Item-Name">Example Work</p>
-                        <div class="Work-Item-SubInfo Center-Between">
-                            <p class="Work-Item-Data">8 months ago</p>
-                            <ul class="Work-Item-Software-ul Center">
-                                <li class="Work-Item-Software-li"><img src="src/Images/js_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/html_icon.png" alt=""></li>
-                                <li class="Work-Item-Software-li"><img src="src/Images/css_icon.png" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- Work Item End -->                                                       
                 </div>
             </div>
-            <ul class="Work-Index Center">
-                <li class="Work-Index-Item Actual-Index"></li>
-                <li class="Work-Index-Item"></li>
-                <li class="Work-Index-Item"></li>
-                <li class="Work-Index-Item"></li>
-            </ul>
-            <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-dipierro-386710199/" class="Center" id="Linkeding-Button">
+            <!-- Work Slide Index -->
+            <div class="Work-Slide-Index-Content Center">
+                <div class="swiper-pagination Work-Slide-Index-Pagination Center"></div>
+            </div>
+            <a class="Linkeding-Button Center" href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-dipierro-386710199/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <g clip-path="url(#clip0_6_25)">
                         <path d="M0 0V32H32V0H0ZM7.84765 6.29101C9.11512 6.30528 10.3637 7.17968 10.418 8.69336C10.4451 10.0394 9.27208 11.0646 7.81445 11.0957H7.77931C6.52445 11.0812 5.29899 10.1849 5.24219 8.69336C5.26008 7.36235 6.37891 6.32259 7.84765 6.29101ZM21.4453 12.6504C22.8388 12.659 24.1539 13.0724 25.2344 14.1739C26.3572 15.4261 26.7177 17.1528 26.7578 18.9082V26.8926H22.1562V19.4512C22.146 18.0565 21.6682 16.3611 19.8223 16.3047C18.7404 16.3162 17.9775 16.9449 17.4551 17.9961C17.3125 18.3345 17.2919 18.7234 17.2851 19.1113V26.8926H12.6855C12.7031 23.0025 12.7273 19.1128 12.7187 15.2227C12.7187 14.1177 12.7081 13.3736 12.6855 12.9902H17.2851V14.9512C17.6756 14.3959 18.1086 13.8693 18.6894 13.4453C19.4773 12.883 20.4237 12.6675 21.4453 12.6504ZM5.51368 12.9902H10.1133V26.8926H5.51368V12.9902Z" fill="black"/>
@@ -203,5 +148,6 @@
     </section>
     <!-- Scripts -->
     <script src="main.js" type="module"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

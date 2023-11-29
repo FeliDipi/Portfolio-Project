@@ -7,7 +7,7 @@ const $mobileSectionIndicator = document.querySelector(".Mobile-Section-Name");
 const windowHeight = window.innerHeight;
 var scrollTop = 0;
 
-export const SetupNavBar = () =>
+export const Navbar = () =>
 {
     $navbarButtons.forEach(btn => {
         btn.addEventListener("click",()=>
@@ -18,7 +18,7 @@ export const SetupNavBar = () =>
     });
 }
 
-export const OnSelectionController = () =>
+export const UpdateSection = () =>
 {
     scrollTop = window.scrollY;
     

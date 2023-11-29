@@ -248,140 +248,138 @@ html
 
 /** Works Section **/
 
-#Works-Panel
+.Works-Slide-Content
 {
-    position: relative;
+    flex-direction: column;
 
     width: 60%;
     height: 75vh;
-    background-color: var(--color-3);
 
+    background-color: var(--color-3);
     box-shadow: var(--shadow-0);
 
-    padding: 30px;
-    padding-bottom: 60px;
+    padding: 40px;
+
+    position: relative;
 }
 
-.Work-Index
+.Works-Slide-Gallery
 {
-    position: absolute;
-
-    gap:25px;
-
-    left: calc(50% - 65px);
-    bottom: 18px;
-}
-
-.Work-Index-Item
-{
-    cursor: pointer;
-
-    list-style: none;
-    width: 10px;
-    height: 10px;
-
-    background-color: var(--color-1);
-}
-
-.Actual-Index
-{
-    width: 25px;
-    height: 25px;
-
-    border-radius: 100%;
-
-    background-color: var(--color-2);
-}
-
-#Works-Item-Content
-{
-    height: 100%;
     width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 30px;
 }
 
-.Work-Item
+.Work-Slide
 {
-    cursor: pointer;
+    position: relative;
 
-    overflow: hidden;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    flex-direction: column;
-
-    width: 100%;
+    width: 75%;
     height: 90%;
 
-    background-color: var(--color-0);
-}
-
-.Work-Item-Preview
-{
-    height: 60%;
+    background-color: var(--color-4);
 
     overflow: hidden;
 }
 
-.Work-Item-Preview img
+.Work-Slide-Image
 {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
-.Work-Item-Description
+.Work-Slide-Description
 {
-    height: 40%;
-    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.75) 100%);
+
+    position: absolute;
 
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap:15px;
+
+    bottom: 0%;
 }
 
-.Work-Item-Name
+.Work-Slide-Name
 {
+    color: var(--color-0);
+
+    font-size: var(--font-xxxl);
+    font-weight: 700;
+}
+
+.Work-Slide-Info
+{
+    color: var(--color-0);
+
     font-size: var(--font-m);
-    font-weight: 600;
 }
 
-.Work-Item-SubInfo
+.Work-Slide-SubInfo-Ul
 {
-    width: 100%;
-}
+    list-style: none;
 
-.Work-Item-Data
-{
-    font-size: var(--font-s);
-    font-weight: 500;
-
-    color:var(--color-8);
-}
-
-.Work-Item-Software-ul
-{
     gap:3px;
 }
 
-.Work-Item-Software-li
+.Work-Slide-SubInfo-li img
 {
-    list-style: none;
+    width: 25px;
+    height: auto;
 }
 
-.Work-Item-Software-li img
+.Work-Slide-Data
 {
-    width: 20px;
-    height: 20px;
+    color:var(--color-7);
+
+    font-size: var(--font-sm);
+    font-weight: 600;
 }
 
-#Linkeding-Button
+.Work-Slide-Index-Content
+{
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+    height: 30px;
+}
+  
+.Work-Slide-Index-Pagination
+{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-pagination-bullet 
+{
+    opacity: 1;
+    background: var(--color-1);
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 0;
+
+    transition: 0.25s ease-in-out;
+}
+  
+.swiper-pagination-bullet-active 
+{
+    background: var(--color-2);
+    border-radius: 100%;
+  
+    width: 25px;
+    height: 25px;
+  
+    transition: 0.25s ease-in-out;
+}
+
+.Linkeding-Button
 {
     cursor: pointer;
 
@@ -397,110 +395,7 @@ html
     left: calc(50% - 25px);
 }
 
-#Linkeding-Button svg
-{
-    width: 25px;
-    height: auto;
-
-    pointer-events: none;
-}
-
-.Work-Extend
-{
-    position: fixed;
-
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.10);
-    backdrop-filter: blur(4px);
-
-    z-index: 99;
-}
-
-.Work-Extend-Panel
-{
-    width: 70%;
-    height: 80vh;
-    
-    background-color: var(--color-0);
-    box-shadow: var(--shadow-0);
-}
-
-.Work-Extend-Gallery
-{
-    position: relative;
-
-    height: 100%;
-    width: 60%;
-}
-
-.Work-Index-Extend
-{
-    bottom: 20px;
-    left: 30px;
-}
-
-.Work-Extend-Gallery-Image
-{
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-}
-
-.Work-Extend-Description
-{
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding: 25px 25px;
-
-    width: 40%;
-    height: 100%;
-}
-
-.Work-Extend-Title
-{
-    font-size: var(--font-xxxl);
-    font-weight: 800;
-
-    line-height: var(--font-xxxl);
-}
-
-.Work-Extend-Information
-{
-    font-size: var(--font-m);
-    font-weight: 400;
-
-    white-space: pre-line;
-}
-
-.Work-Extend-Close
-{
-    cursor: pointer;
-
-    position: absolute;
-
-    top: calc(0% - 25px);
-    right: calc(0% - 25px);
-
-    width: 50px;
-    height: 50px;
-
-    border-radius: 100%;
-
-    background-color: var(--color-2);
-}
-
-.Work-Extend-Close svg
+.Linkeding-Button svg
 {
     width: 25px;
     height: auto;
@@ -705,60 +600,17 @@ body
 
     /** Work Section **/
 
-    #Works-Panel
+    .Works-Slide-Content
     {
         width: 90%;
         height: 75vh;
 
-        padding: 50px 25px;
+        padding: 40px 25px;
     }
 
-    #Works-Item-Content
-    {
-        height: 100%;
-
-        grid-template-columns: repeat(1, 1fr);
-
-        gap: 25px;
-    }
-
-    #Works-Item-Content > :nth-child(-n+2)
-    {
-        display: none;
-    }
-
-    /** Work Extend **/
-
-    .Work-Extend-Panel
+    .Work-Slide
     {
         width: 90%;
-        height: 75vh;
-
-        flex-direction: column;
-    }
-
-    .Work-Extend-Gallery
-    {
-        width: 100%;
-        height: 40%;
-    }
-
-    .Work-Extend-Description
-    {
-        width: 100%;
-        height: 60%;
-
-        overflow-y: scroll;
-    }
-
-    .Work-Extend-Title
-    {
-        text-align: center;
-    }
-
-    .Work-Extend-Close
-    {
-        right: calc(50% - 25px);
     }
 
     /** Contact Section **/

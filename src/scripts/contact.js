@@ -1,7 +1,7 @@
-const $submit = document.querySelector('#Form-Send-Button');
-
-const SetupForm = () =>
+export const Contact = () =>
 {
+    const $submit = document.querySelector('#Form-Send-Button');
+
     $submit.addEventListener('click',(e)=>
     {
         e.preventDefault();
@@ -14,7 +14,5 @@ const SetupForm = () =>
         if(!name || !mail) return;
     
         window.location.href=`mailto:nicolasfelipedipierro@gmail.com?subject=${subject}&body=Nombre%3A${name}%0ACorreo%3A${mail}%0AMensaje%3A${message}`;
-    });
+    })
 }
-
-export default SetupForm;

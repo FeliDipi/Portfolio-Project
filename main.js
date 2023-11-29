@@ -1,15 +1,16 @@
-import { SetupNavBar,OnSelectionController } from "./navbar.js";
-import SetupWorkItems from "./workItem.js";
-import SetupForm from "./form.js";
+import { Navbar,UpdateSection } from "./src/scripts/navbar.js";
+
+import { Work } from "./src/Scripts/Work.js";
+import { Contact } from "./src/Scripts/contact.js";
 
 window.onscroll = () =>
 {
-    OnSelectionController();
+    UpdateSection();
 }
 
 window.onload = () =>
 {
-    SetupNavBar();
-    SetupWorkItems();
-    SetupForm();
+    Navbar();
+    Work();
+    Contact();
 }
