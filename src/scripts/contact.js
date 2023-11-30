@@ -4,15 +4,30 @@ export const Contact = () =>
 
     $submit.addEventListener('click',(e)=>
     {
+        $submit.classList.add("Disable");
+
         e.preventDefault();
     
-        const name = document.querySelector('#Form-Name').value;
-        const mail = document.querySelector('#Form-Email').value;
-        const message = document.querySelector('#Form-Message').value;
-        const subject = "Hi 👋";
+        (function(){
+            emailjs.init("VZ9Kko9ZfhBhWKuUq")
+        })();
 
-        if(!name || !mail) return;
-    
-        window.location.href=`mailto:nicolasfelipedipierro@gmail.com?subject=${subject}&body=Nombre%3A${name}%0ACorreo%3A${mail}%0AMensaje%3A${message}`;
+        var params = 
+        {
+            sendername: document.querySelector("#Form-Name").value,
+            senderemail: document.querySelector("#Form-Email").value,
+            message: document.querySelector("#Form-Message").value
+        }
+
+        console.log(params);
+
+        var serviceID = "service_b0cdxrz";
+        var templateID = "template_fb26n7l";
+
+        emailjs.send(serviceID, templateID, params).then(res=>{
+            $submit.classList.remove("Disable");
+            alert("Thanks for get in touch!!!");
+        })
+        .catch();
     })
 }

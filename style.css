@@ -393,6 +393,8 @@ html
 
     bottom: calc(100% - 25px);
     left: calc(50% - 25px);
+
+    transition: 0.25s ease-in-out;
 }
 
 .Linkeding-Button svg
@@ -401,6 +403,11 @@ html
     height: auto;
 
     pointer-events: none;
+}
+
+.Linkeding-Button:hover
+{
+    border-radius: 0px;
 }
 
 /** Contact Section **/
@@ -488,6 +495,15 @@ html
 
     font-size: var(--font-m);
     font-weight: 600;
+    
+    transition: 0.25s ease-in-out;
+}
+
+#Form-Send-Button:hover
+{
+    color:var(--color-1);
+    background-color: var(--color-2);
+    border-radius: 0px;
 }
 
 #Form-Send-Mail
@@ -534,6 +550,16 @@ html
 .Text-Bold
 {
     font-weight: 700;
+}
+
+.Disable
+{
+    pointer-events: none;
+
+    transform: scale(0.95);
+    opacity: 0.75;
+
+    transition: 0.15s ease-in-out;
 }
 
 body
