@@ -11,34 +11,55 @@
 <body>
     <!-- Nav Bar -->
     <nav class="Navbar Center-Between">
-        <svg class="DarkMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6A9.996 9.996 0 0 1 12.001 22C6.477 22 2 17.523 2 12c0-5.315 4.146-9.66 9.38-9.98Z"/></svg>
         <div class="Mobile-Section Center">
             <p class="Mobile-Section-Name">Me</p>
             <div class="Dot"></div>
         </div>
-        <svg class="Mobile-Menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M0 1h16v3H0zm0 5h16v3H0zm0 5h16v3H0z"/></svg>
+        <svg class="Mobile-Menu-Button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M0 1h16v3H0zm0 5h16v3H0zm0 5h16v3H0z"/></svg>
         <ul class="Navbar-ul Center">
             <li class="Navbar-li Center"><a class="Navbar-li-a Selected" href="#Home">Me</a><div class="Dot"></div></li>
             <li class="Navbar-li Center"><a class="Navbar-li-a" href="#Works">Works</a><div class="Dot"></div></li>
             <li class="Navbar-li Center"><a class="Navbar-li-a" href="#Contact">Contact</a><div class="Dot"></div></li>
         </ul>
     </nav>
+    <!-- Mobile Menu -->
+    <div class="Mobile-Menu">
+        <div class="Mobile-Menu-Content Center">
+            <ul class="Mobile-Menu-Ul Center">
+                <li class="Mobile-Menu-Li Center">
+                    <a class="Mobile-Menu-Li-A Selected" href="#Home">Me</a>
+                    <div class="Dot"></div>
+                </li>
+                <li class="Mobile-Menu-Li Center">
+                    <a class="Mobile-Menu-Li-A" href="#Works">Works</a>
+                    <div class="Dot"></div>
+                </li>
+                <li class="Mobile-Menu-Li Center">
+                    <a class="Mobile-Menu-Li-A" href="#Contact">Contact</a>
+                    <div class="Dot"></div>
+                </li>
+            </ul>
+            <div class="Mobile-Menu-Close-Button Center">
+                <svg class="Mobile-Menu-Close-Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="white" d="M15.1 3.1L12.9.9L8 5.9L3.1.9L.9 3.1l5 4.9l-5 4.9l2.2 2.2l4.9-5l4.9 5l2.2-2.2l-5-4.9z"/></svg>
+            </div>
+        </div>
+    </div>
     <!-- Home Section -->
     <section class="Section Center" id="Home">
         <div class="Home-Content Center">
-            <div id="Personal">
-                <div class="Center" id="Personal-Dot" >
+            <div class="Personal">
+                <div class="Personal-Dot Center">
                     <img src="src/Images/personal_icon_light.png" alt="">
                 </div>
                 <h1 class="Text-h1">Personal</h2>
                 <p class="Text-p">Lorem ipsum dolor sit amet consectetur <span class="Text-Colored">adipisicing</span> elit. Quos numquam fugiat eius magnam ex similique distinctio, quibusdam quas accusantium quisquam mollitia veritatis deleniti ea error impedit. Similique sit veritatis pariatur?</p>
             </div>
-            <div id="Profile">
-                <img id="Profile-img" src="src/Images/perfil.jpg" alt="Nicolás Felipe Dipierro">
-                <h1 id="Profile-h1">Nicolás Felipe <span class="Text-Colored">Dipierro</span></h1>
+            <div class="Profile">
+                <img class="Profile-img" src="src/Images/perfil.jpg" alt="Nicolás Felipe Dipierro">
+                <h1 class="Profile-h1">Nicolás Felipe <span class="Text-Colored">Dipierro</span></h1>
             </div>
-            <div id="Profesional">
-                <div class="Center" id="Profesional-Dot">
+            <div class="Profesional">
+                <div class="Profesional-Dot Center">
                     <img src="src/Images/profesional_icon_light.png" alt="">
                 </div>
                 <h1 class="Text-h1">Profesional</h2>
@@ -124,28 +145,31 @@
     </section>
     <!-- Contact Section -->
     <section class="Section Center" id="Contact">
-        <form class="Center" id="Form" action="">
-            <div class="Form-Input-Content" id="Form-Name-Input">
+        <form class="Form Center" action="">
+            <div class="Form-Input-Content Form-Name-Input">
                 <p>Full Name</p>
-                <Input id="Form-Name" type="text" placeholder="your name..."></Input>
+                <Input class="Form-Name" type="text" placeholder="your name..."></Input>
             </div>
-            <div class="Form-Input-Content" id="Form-Mail-Input">
+            <div class="Form-Input-Content Form-Mail-Input">
                 <p>Email</p>
-                <Input id="Form-Email" type="email" placeholder="your email..."></Input>
+                <Input class="Form-Email" type="email" placeholder="your email..."></Input>
             </div>
-            <div class="Form-Input-Content" id="Form-Message-Input">
+            <div class="Form-Input-Content Form-Message-Input">
                 <p>Message</p>
-                <Textarea id="Form-Message" placeholder="talk with me..."></Textarea>
+                <Textarea class="Form-Message" placeholder="talk with me..."></Textarea>
             </div>
-            <div class="Center-Between" id="Form-Send">
-                <input id="Form-Send-Button" type="submit" value="Get In Touch"/>
-                <p id="Form-Send-Mail">
+            <div class="Center-Between Form-Send">
+                <input class="Form-Send-Button" type="submit" value="Get In Touch"/>
+                <p class="Form-Send-Mail">
                     <span class="Text-Bold">Contact</span>
                     nicolasdipierrocontacto@gmail.com
                 </p>
             </div>
         </form>
     </section>
+    <footer class="Center">
+        2023, Nicolás Felipe Dipierro, Todos los derechos son reservados ®
+    </footer>
     <!-- Scripts -->
     <script src="main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

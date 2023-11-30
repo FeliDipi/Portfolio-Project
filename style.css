@@ -42,7 +42,7 @@ html
     scroll-behavior: smooth;
 }
 
-/** Nav Bar **/
+/* Nav Bar */
 
 .Navbar
 {
@@ -51,10 +51,12 @@ html
     width: 100%;
     height: 8vh;
 
+    padding: 0px 15px;
+
     z-index: 100;
 }
 
-.DarkMode
+.DarkMode-Button
 {
     width: auto;
     height: 50%;
@@ -63,7 +65,7 @@ html
     cursor: pointer;
 }
 
-.DarkMode path:hover 
+.DarkMode-Button path:hover 
 {
     transition: var(--transition);
     fill: var(--color-2);
@@ -72,7 +74,6 @@ html
 .Navbar-ul
 {
     gap: 30px;
-    margin-right: var(--font-xl);
 }
 
 .Navbar-li
@@ -119,7 +120,7 @@ html
     display: flex;
 }
 
-/** Mobile **/
+/* Mobile */
 
 .Mobile-Section
 {
@@ -143,18 +144,93 @@ html
     display: none;
 }
 
-.Mobile-Menu
+.Mobile-Menu-Button
 {
     display: none;
 
     width: auto;
     height: 50%;
-    margin-right: var(--font-xl);
 
     cursor: pointer;
 }
 
-/** Sections **/
+/* Mobile Menu */
+
+.Mobile-Menu
+{
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: 99;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mobile-Menu-Content
+{
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    background-color: var(--color-1);
+    border-radius: 100%;
+}
+
+.Mobile-Menu-Ul
+{
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.Mobile-Menu-Li
+{
+    gap:15px;
+}
+
+.Mobile-Menu-Li .Dot
+{
+    width: 15px;
+    height: 15px;
+}
+
+.Mobile-Menu-Li-A
+{
+    color: var(--color-0);
+
+    font-size: var(--font-xxxl);
+    text-decoration: none;
+}
+
+.Mobile-Menu-Close-Button
+{
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 100%;
+
+    background-color: var(--color-1);
+
+    bottom: -100px
+}
+
+.Mobile-Menu-Close-Icon
+{
+    width: 50%;
+    height: auto;
+}
+
+/* Sections */
 
 .Section
 {
@@ -162,7 +238,7 @@ html
     width: 100%;
 }
 
-/** Home Section **/
+/* Home Section */
 
 .Home-Content
 {
@@ -172,7 +248,7 @@ html
     height: 100%;
 }
 
-#Personal, #Profesional
+.Personal, .Profesional
 {
     width: 30%;
 
@@ -183,18 +259,18 @@ html
     gap:21px;
 }
 
-#Personal-Dot, #Profesional-Dot
+.Personal-Dot, .Profesional-Dot
 {
     width: 100%;
 }
 
-#Personal-Dot img
+.Personal-Dot img
 {
     width: 25%;
     height: auto;
 }
 
-#Profesional-Dot img
+.Profesional-Dot img
 {
     width: 25%;
     height: auto;
@@ -217,7 +293,7 @@ html
     font-size: var(--font-m);
 }
 
-#Profile
+.Profile
 {
     width: 25%;
 
@@ -226,7 +302,7 @@ html
     gap: 15px;
 }
 
-#Profile-img
+.Profile-img
 {
     width: 100%;
     height: auto;
@@ -234,7 +310,7 @@ html
     box-shadow: var(--shadow-0);
 }
 
-#Profile-h1
+.Profile-h1
 {
     width: 100%;
 
@@ -246,7 +322,7 @@ html
     line-height: var(--font-xxxl);
 }
 
-/** Works Section **/
+/* Works Section */
 
 .Works-Slide-Content
 {
@@ -410,9 +486,9 @@ html
     border-radius: 0px;
 }
 
-/** Contact Section **/
+/* Contact Section */
 
-#Form
+.Form
 {
     position: relative;
 
@@ -474,12 +550,12 @@ html
     font-size: var(--font-sm);
 }
 
-#Form-Send
+.Form-Send
 {
     width: 100%;
 }
 
-#Form-Send-Button
+.Form-Send-Button
 {
     cursor: pointer;
 
@@ -499,22 +575,36 @@ html
     transition: 0.25s ease-in-out;
 }
 
-#Form-Send-Button:hover
+.Form-Send-Button:hover
 {
     color:var(--color-1);
     background-color: var(--color-2);
     border-radius: 0px;
 }
 
-#Form-Send-Mail
+.Form-Send-Mail
 {
     white-space: pre-line;
     font-size: var(--font-m);
     line-height: var(--font-s);
 }
 
+/* Footer */
 
-/** General **/
+footer
+{
+    width: 100%;
+    height: 8vh;
+
+    background-color: var(--color-1);
+
+    color: var(--color-0);
+    font-size: var(--font-s);
+
+    text-align: center;
+}
+
+/* General */
 
 .Center
 {
@@ -567,11 +657,11 @@ body
     overflow-x: hidden;
 }
 
-/** Responsive **/
+/* Responsive */
 
 @media  screen and (max-width:900px)
 {
-    /** Navbar **/
+    /* Navbar */
 
     .Navbar
     {
@@ -593,12 +683,12 @@ body
         display: flex;
     }
 
-    .Mobile-Menu
+    .Mobile-Menu-Button
     {
         display: block;
     }
 
-    /** Home Section **/
+    /* Home Section */
 
     #Home
     {
@@ -615,7 +705,7 @@ body
         flex-direction: column;
     }
 
-    #Personal, #Profesional, #Profile
+    .Personal, .Profesional, .Profile
     {
         width: 90%;
         height: fit-content;
@@ -624,7 +714,7 @@ body
         align-items: center;
     }
 
-    /** Work Section **/
+    /* Work Section */
 
     .Works-Slide-Content
     {
@@ -639,21 +729,21 @@ body
         width: 90%;
     }
 
-    /** Contact Section **/
+    /* Contact Section */
 
-    #Form
+    .Form
     {
         width: 90%;
 
         padding: 25px;
     }
 
-    #Form-Send
+    .Form-Send
     {
         flex-direction: column;
     }
 
-    #Form-Send-Button
+    .Form-Send-Button
     {
         width: 100%;
     }
@@ -672,7 +762,7 @@ body
         --font-s:1.75rem;
     }
 
-    /** Contact Section **/
+    /* Contact Section */
 
     .Form-Input-Content Input
     {
@@ -688,7 +778,7 @@ body
         padding: 20px;
     }
 
-    #Form-Send-Button
+    .Form-Send-Button
     {   
         width: 500px;
         height: 100px;

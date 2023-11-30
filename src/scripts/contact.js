@@ -1,6 +1,6 @@
 export const Contact = () =>
 {
-    const $submit = document.querySelector('#Form-Send-Button');
+    const $submit = document.querySelector('.Form-Send-Button');
 
     $submit.addEventListener('click',(e)=>
     {
@@ -14,9 +14,9 @@ export const Contact = () =>
 
         var params = 
         {
-            sendername: document.querySelector("#Form-Name").value,
-            senderemail: document.querySelector("#Form-Email").value,
-            message: document.querySelector("#Form-Message").value
+            sendername: document.querySelector(".Form-Name").value,
+            senderemail: document.querySelector(".Form-Email").value,
+            message: document.querySelector(".Form-Message").value
         }
 
         console.log(params);
