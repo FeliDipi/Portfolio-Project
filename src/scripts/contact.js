@@ -4,8 +4,6 @@ export const Contact = () =>
 
     $submit.addEventListener('click',(e)=>
     {
-        $submit.classList.add("Disable");
-
         e.preventDefault();
     
         (function(){
@@ -19,7 +17,9 @@ export const Contact = () =>
             message: document.querySelector(".Form-Message").value
         }
 
-        console.log(params);
+        if(!params.sendername || !params.senderemail || !params.message) return;
+
+        $submit.classList.add("Disable");
 
         var serviceID = "service_b0cdxrz";
         var templateID = "template_fb26n7l";
