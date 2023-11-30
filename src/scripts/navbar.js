@@ -17,14 +17,14 @@ var scrollTop = 0;
 
 const CloseMenu = () =>
 {
-    $navbar.classList.remove("Hidden");
-    $mobileMenu.classList.remove("Visible");
+    $navbar.classList.remove("OpacityOff");
+    $mobileMenu.classList.remove("OpacityOn");
 }
 
 const OpenMenu = () =>
 {
-    $navbar.classList.add("Hidden");
-    $mobileMenu.classList.add("Visible");
+    $navbar.classList.add("OpacityOff");
+    $mobileMenu.classList.add("OpacityOn");
 }
 
 export const Navbar = () =>

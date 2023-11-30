@@ -168,9 +168,12 @@ html
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(4px);
 
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    pointer-events: none;
+    opacity: 0;
 }
 
 .Mobile-Menu-Content
@@ -486,6 +489,52 @@ html
     border-radius: 0px;
 }
 
+.Work-Decoration
+{
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background-color: var(--color-2);
+
+    border-radius: 100%;
+
+    z-index: -1;
+}
+
+.Work-Decoration-0
+{
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background-color: var(--color-2);
+
+    border-radius: 100%;
+
+    z-index: -1;
+
+    left: calc(0% - 150px);
+}
+
+.Work-Decoration-1
+{
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background-color: var(--color-2);
+
+    border-radius: 100%;
+
+    z-index: -1;
+
+    left: calc(100% - 150px);
+}
+
 /* Contact Section */
 
 .Form
@@ -499,7 +548,6 @@ html
     box-shadow: var(--shadow-0);
 
     padding: 50px;
-    padding-bottom: 80px;
 
     flex-direction: column;
 
@@ -589,6 +637,40 @@ html
     line-height: var(--font-s);
 }
 
+.Form-Decoration-0
+{
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: var(--color-1);
+
+    border-radius: 100%;
+
+    left: calc(0% - 100px);
+    top: calc(0% - 100px);
+
+    z-index: -1;
+}
+
+.Form-Decoration-1
+{
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: var(--color-1);
+
+    border-radius: 100%;
+
+    left: calc(100% - 50px);
+    top: calc(100% - 50px);
+
+    z-index: -1;
+}
+
 /* Footer */
 
 footer
@@ -630,6 +712,20 @@ footer
     display: none;
 }
 
+.OpacityOn
+{
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.15s ease-in-out;
+}
+
+.OpacityOff
+{
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.15s ease-in-out;
+}
+
 .Text-Colored
 {
     color:var(--color-2);
@@ -657,10 +753,60 @@ body
     overflow-x: hidden;
 }
 
+/* Decorations */
+
+.Decoration-0,.Decoration-1,.Decoration-2
+{
+    position: fixed;
+
+    z-index: -100;
+
+    background: url(src/Images/noise_texture.jpg);
+    background-size: cover;
+
+    border-radius: 100%;
+
+    opacity: 0.33;
+}
+
+.Decoration-0
+{
+    top: calc(0% - 100px);
+    left: calc(0% - 100px);
+
+    width: 350px;
+    height: 350px;
+}
+
+.Decoration-1
+{
+    bottom: calc(25%);
+    left: calc(20%);
+
+    width: 200px;
+    height: 200px;
+}
+
+.Decoration-2
+{
+    bottom: calc(0% - 100px);
+    right: calc(0% - 100px);
+
+    width: 400px;
+    height: 400px;
+}
+
 /* Responsive */
 
 @media  screen and (max-width:900px)
 {
+    /* Decorations */
+
+    .Form-Decoration-0, .Form-Decoration-1, .Work-Decoration-0, .Work-Decoration-1
+    {
+        display: none;
+    }
+
     /* Navbar */
 
     .Navbar
@@ -751,36 +897,18 @@ body
 
 @media  screen and (min-width:1980px)
 {
-    :root
+    .Home-Content
     {
-        --font-large:7rem;
-        --font-xxxl:4rem;
-        --font-xxl:3.5rem;
-        --font-xl:3rem;
-        --font-m:2rem;
-        --font-sm:1.8rem;
-        --font-s:1.75rem;
+        width: 50%;
     }
 
-    /* Contact Section */
-
-    .Form-Input-Content Input
+    .Works-Slide-Content
     {
-        height: 80px;
-
-        padding: 20px;
+        width: 50%;
     }
 
-    .Form-Input-Content TextArea
+    .Form
     {
-        height: 360px;
-
-        padding: 20px;
-    }
-
-    .Form-Send-Button
-    {   
-        width: 500px;
-        height: 100px;
+        width: 50%;
     }
 }
