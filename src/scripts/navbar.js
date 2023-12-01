@@ -47,10 +47,8 @@ export const UpdateSection = () =>
 
             //desktop section indicator update
             $navbarButtons[i].classList.add('Selected');
-
             //mobile menu section indicator update
             $mobileMenuButtons[i].classList.add('Selected');
-
             //mobile section indicator update
             $mobileSectionIndicator.innerHTML = $navbarButtons[i].textContent;
         }

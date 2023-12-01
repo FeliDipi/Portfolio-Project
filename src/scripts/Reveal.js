@@ -8,13 +8,7 @@ export const Reveal = () =>
         var revealTop = $reveals[i].getBoundingClientRect().top;
         var revealPoint = 150;
         
-        if(revealTop < windowHeight-revealPoint)
-        {
-            $reveals[i].classList.add("Reveal-Effect");
-        }
-        else
-        {
-            $reveals[i].classList.remove("Reveal-Effect");
-        }
+        if(revealTop < windowHeight-revealPoint) $reveals[i].classList.add("Reveal-Effect");
+        else $reveals[i].classList.remove("Reveal-Effect");
     }
 }

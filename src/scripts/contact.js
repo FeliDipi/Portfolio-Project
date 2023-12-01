@@ -24,7 +24,9 @@ export const Contact = () =>
         var serviceID = "service_b0cdxrz";
         var templateID = "template_fb26n7l";
 
-        emailjs.send(serviceID, templateID, params).then(res=>{
+        emailjs.send(serviceID, templateID, params)
+        .then(res=>
+        {
             $submit.classList.remove("Disable");
             alert("Thanks for get in touch!!!");
         })
