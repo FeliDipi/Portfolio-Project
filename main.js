@@ -5,8 +5,6 @@ import { Contact } from "./src/Scripts/Contact.js";
 
 import { Reveal } from "./src/scripts/Reveal.js";
 
-Reveal();
-
 window.onscroll = () =>
 {
     Reveal();
@@ -15,6 +13,7 @@ window.onscroll = () =>
 
 window.onload = () =>
 {
+    Reveal();
     Navbar();
     Work();
     Contact();
