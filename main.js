@@ -1,9 +1,9 @@
-import { Navbar, UpdateSection } from "./src/Scripts/navbar.js";
+import { Navbar, UpdateSection } from "./src/Js/navbar.js";
 
-import { Work } from "./src/Scripts/work.js";
-import { Contact } from "./src/Scripts/contact.js";
+import { Work } from "./src/Js/work.js";
+import { Contact } from "./src/Js/contact.js";
 
-import { Reveal } from "./src/Scripts/reveal.js";
+import { Reveal } from "./src/Js/reveal.js";
 
 window.onscroll = () =>
 {
