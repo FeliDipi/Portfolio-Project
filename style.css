@@ -43,6 +43,52 @@ html
     scroll-behavior: smooth;
 }
 
+/* Load Screen */
+
+.Load-Screen
+{
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--color-1);
+
+    z-index: 999;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.Load-Screen svg
+{
+    width: 2.5%;
+    height: auto;
+
+    animation: 0.75s infinite rotation linear; 
+}
+
+.Load-Screen p
+{
+    color: var(--color-0);
+
+    font-size: var(--font-xxxl);
+    font-weight: 600;
+}
+
+@keyframes rotation
+{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
 /* Nav Bar */
 
 .Navbar
