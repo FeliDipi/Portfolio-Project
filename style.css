@@ -797,6 +797,20 @@ footer
     overflow: hidden;
 }
 
+/* Reveal Effect */
+
+.Reveal
+{
+    position: relative;
+    opacity: 0;
+}
+
+.Reveal-Effect
+{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
 body
 {
     overflow-x: hidden;
